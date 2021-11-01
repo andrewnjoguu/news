@@ -55,7 +55,12 @@ def home():
     for i in range(len(a_articles)):
         a_articles = a_articles[i]
 
-    
+    #add all contents in to each list
+    news_all.append(main_aricle['title'])
+    desc_all.append(main_aricle['description'])
+    img_all.append(main_aricle['urlToImage'])
+    p_date.append(main_aricle['publishedAt'])
+    url_all.append(main_aricle['url'])
 
         #zip made to find contents directly
         contents = zip(news,desc,img,p_date,url)
