@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <title>NEWS APP</title>
+
+</head>
+<body>
+    <nav>
+        <a href="" class="logo"><h2>TANGAZO NEWS</h2></a>
+        <ul class="menu>">
+            <li class="nav-items"><a href="">Home</a></li> 
+            <li class="nav-items"><a href="">News</a></li> 
+            <li class="nav-items"><a href="">Articles</a></li> 
+            <li class="nav-items"><a href="">Contact</a></li> 
+        </ul>    
+    </nav>
+<section id="main">
+    <div class="banner"><img src="/template/news_1920x1080.png"></div>
+    <div class="head">TODAY'S HEADLINES</div>
+    {%for title,desc,img,p_date,url in contents %}
+<div class="wrapper">
+    <div class="item"><a href= "{{url}}"><img src="{{img}}"></a></div>
+    <div class="box">
+        <div class="content"><a href="{{url}}"><h2>{{tittle}}</h2></a></div>
+        <div class="content"><a href="{{url}}"><p>{{desc}}</p></a></div>
+        <div class="content"><p style="color:rgb(77,255,0)">Issue Date:-<p></p>{{p_date}}</div>
+    </div>
+</div>
+    {% endfor %}
+
+    <div class="head">TODAY NEWS</div>
+    #
+
+</section>
+<footer>
+    <div class="copyright"><h2>Copyright &copy; Tangazo News 2021</h2></div>
+</footer>
+</body>
+</html>
