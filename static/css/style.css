@@ -1,0 +1,96 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+* {
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    background-color: yellow;
+    min-height: 60px;
+    display: flex;
+    flex-flow: row wrap;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0,4);
+    justify-content: space-around;
+    position: absolute;
+    border-top: black ;
+    align-items: center;
+}
+.logo h2{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+}
+
+nav .menu{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+nav .menu li a {
+    height: 35px;
+    display: flex;
+    letter-spacing: 2px;
+    color:  white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding: 0px 22px;
+    align-items: center;
+}
+nav .menu li a:hover {
+    border-radius: 20px;
+    color: black;
+    background-color: white;
+}
+#main{
+    padding: 98px;
+}
+.banner {
+    height: 620px;
+    width: 97%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: 1px solid rgb(98, 4, 4);
+}
+
+
+.banner img {
+    height: 100%  ;
+}
+.nav-link {
+    height: 100%;
+    width: 100%;
+    color: black;
+}
+.head{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-top: 15px;
+    padding-left: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 33px;
+
+}
