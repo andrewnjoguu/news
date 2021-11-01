@@ -18,13 +18,13 @@
         </ul>    
     </nav>
 <section id="main">
-    <div class="banner"><img src="/template/news_1920x1080.png"></div>
+    
     <div class="head">TODAY'S HEADLINES</div>
     {%for title,desc,img,p_date,url in contents %}
 <div class="wrapper">
     <div class="item"><a href= "{{url}}"><img src="{{img}}"></a></div>
     <div class="box">
-        <div class="content"><a href="{{url}}"><h2>{{tittle}}</h2></a></div>
+        <div class="content"><a href="{{url}}"><h2>{{title}}</h2></a></div>
         <div class="content"><a href="{{url}}"><p>{{desc}}</p></a></div>
         <div class="content"><p style="color:rgb(77,255,0)">Issue Date:-<p></p>{{p_date}}</div>
     </div>
@@ -32,7 +32,16 @@
     {% endfor %}
 
     <div class="head">TODAY NEWS</div>
-    #
+    {%for title,desc,img,p_date,url in all %}
+    <div class="wrapper">
+        <div class="item"><a href= "{{url}}"><img src="{{img}}"></a></div>
+        <div class="box">
+            <div class="content"><a href="{{url}}"><h2>{{title}}</h2></a></div>
+            <div class="content"><a href="{{url}}"><p>{{desc}}</p></a></div>
+            <div class="content"><p style="color:rgb(77,255,0)">Issue Date:-<p></p>{{p_date}}</div>
+        </div>
+    </div>
+        {% endfor %}
 
 </section>
 <footer>
