@@ -92,5 +92,62 @@ nav .menu li a:hover {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 33px;
-
 }
+
+.wrapper {
+    height: 390px;
+    width: 100%;
+    display: flex;
+    background-color: rgba(68, 47, 47);
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.wrapper .item {
+    flex-flow: column wrap;
+    border-bottom: white;
+    height: 310px;
+    min-width: 30%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+    padding: 0.5px;
+    margin: 2px;
+}
+
+.wrapper .item img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.box {
+    max-width: 50%;
+    padding: 1px;
+    flex-flow: column;
+    align-items: center;
+    display: flex;
+    height: content;
+}
+.box .content{
+    height: content;
+    min-width: 30px;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.box .content p {
+    color: white;
+    font-size: 15px; 
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.box .content h2{
+    color: yellow;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
