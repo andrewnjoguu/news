@@ -19,11 +19,15 @@ def home():
 
   #for the top headlines of news we will code:
     top_headlines = newsapi.get_top_headlines(sources = 'bbc-news')
+    #the main articles ,
+    all_articles = newsapi.get_everything(sources='bbc-news')
 
   # source is meant by where news comes into app by api
 
  #fetch all articles
     t_articles = top_headlines['articles']
+    #fetch all articles
+    a_articles = all_articles['articles']
 
     news = []
     desc = []
@@ -41,6 +45,17 @@ def home():
         img.append(main_aricle['urlToImage'])
         p_date.append(main_aricle['publishedAt'])
         url.append(main_aricle['url'])
+
+    news_all = []
+    desc_all =[]
+    img_all =[]
+    p_date_all = []
+    url_all = []
+    #loop for all articles
+    for i in range(len(a_articles)):
+        a_articles = a_articles[i]
+
+    
 
         #zip made to find contents directly
         contents = zip(news,desc,img,p_date,url)
