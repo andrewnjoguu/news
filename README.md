@@ -25,6 +25,7 @@ A user is able to:
         
 ## Technologies Used
 * Python3.8
+* heroku
 
 ### License
 
