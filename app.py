@@ -52,21 +52,22 @@ def home():
     p_date_all = []
     url_all = []
     #loop for all articles
-    for i in range(len(a_articles)):
-        a_articles = a_articles[i]
+    for j in range(len(a_articles)):
+        a_article = a_articles[j]
 
     #add all contents in to each list
-    news_all.append(main_aricle['title'])
-    desc_all.append(main_aricle['description'])
-    img_all.append(main_aricle['urlToImage'])
-    p_date.append(main_aricle['publishedAt'])
-    url_all.append(main_aricle['url'])
+    news_all.append(a_article ['title'])
+    desc_all.append(a_article['description'])
+    img_all.append(a_article['urlToImage'])
+    p_date.append(a_article['publishedAt'])
+    url_all.append(a_article  ['url'])
 
         #zip made to find contents directly
-        contents = zip(news,desc,img,p_date,url)
+    contents = zip(news,desc,img,p_date,url)
+    all = zip(news_all,desc_all,img_all,p_date_all,url_all)
 
 
-    return render_template('home.html', contents=contents)
+    return render_template('home.html', contents=contents,all=all)
  
 
 
